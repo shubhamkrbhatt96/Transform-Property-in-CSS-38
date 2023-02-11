@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property in CSS 38</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container {
+        height: 80vh;
+        background-color: burlywood;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .box {
+        font-weight: bold;
+        font-size: 33px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background: brown;
+        border: 2px solid black;
+        border-radius: 8px;
+        height: 400px;
+        width: 400px;
+        /* we implemented transform property in CSS in accordance with transition. */
+        transition: all 1s ease-in-out;
+        /* transform property of rotating the box by some desirable deg */
+        /* transform: rotate(45deg); */
+    }
+    .box:hover{
+        /* it rotate the image using transform property in css */
+        /* transform: rotate(360deg);  */
+
+        /* another type of transform property in css which tilts the image given already */
+        /* transform: skew(40deg); */
+
+         /* another type of transform property in css which scales the image given already */
+        /* transform: scale(2); */
+
+        /* we can do the translate property in transform property in CSS */
+        /* Basically it shift the box towards the right of the box by the pixel given here.(horizontlly in x axis) */
+        /* transform: translateX(123px); */
+
+        /* Basically it shift the box towards the up and down of the box by the pixel given here.(vertically in y axis) */
+        /* transform: translateY(123px); */
+
+        /* To move the box both in x and y axis both using semicolon in btwn ,  i can translate the box in both direction */
+        transform: translate(123px ,123px);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">This is a box .
+        </div>
+    </div>
+</body>
+
+</html>
